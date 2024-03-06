@@ -11,6 +11,7 @@ import {
   Text,
 } from "@react-email/components";
 import * as React from "react";
+// import logoImg from '../public/logo'
 
 const baseUrl = process.env.VERCEL_URL
   ? `https://${process.env.VERCEL_URL}`
@@ -74,7 +75,7 @@ export const EmailTemplate = ({
     <Body style={main}>
       <Container style={container}>
         <Img
-          src={`/logo.svg`}
+          src={`../public/logo.svg`}
           width="170"
           height="50"
           alt="LogoIpsum"
