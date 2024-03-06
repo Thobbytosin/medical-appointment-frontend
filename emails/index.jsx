@@ -80,13 +80,19 @@ export const EmailTemplate = ({
           alt="LogoIpsum"
           style={logo}
         />
-        <Text style={paragraph}>Hi {UserName},</Text>
         <Text style={paragraph}>
-          Your Appointment with {doctorName} at {doctorHospital} has been
-          booked.
+          Hi <span style={bold}>{UserName}</span>,
         </Text>
-        <Text style={paragraph}>Date:{Date}</Text>
-        <Text style={paragraph}>Time:{Time}</Text>
+        <Text style={paragraph}>
+          Your Appointment with <span style={bold}>{doctorName}</span> at{" "}
+          <span style={bold}>{doctorHospital}</span> has been booked.
+        </Text>
+        <Text style={paragraph}>
+          <span style={bold}>Date:</span> {Date}
+        </Text>
+        <Text style={paragraph}>
+          <span style={bold}>Time:</span> {Time}
+        </Text>
         <Text style={paragraph}>
           Best,
           <br />
@@ -119,6 +125,10 @@ const logo = {
 const paragraph = {
   fontSize: "16px",
   lineHeight: "26px",
+};
+
+const bold = {
+  fontWeight: 600,
 };
 
 const btnContainer = {
