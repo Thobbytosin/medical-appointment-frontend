@@ -74,7 +74,7 @@ export const EmailTemplate = ({
     <Body style={main}>
       <Container style={container}>
         <Img
-          src={`${baseUrl}/logo.svg`}
+          src={`/logo.svg`}
           width="170"
           height="50"
           alt="LogoIpsum"
